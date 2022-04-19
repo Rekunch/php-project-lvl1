@@ -7,8 +7,11 @@
     },
     "authors": [
         {
-            "name": "alexei Kriventsov"
+            "name": "Alexei Kriventsov"
         }
     ],
-    "require": {}
+    "require":{
+"bin": [
+	"bin/brain-games"
+]}
 }
