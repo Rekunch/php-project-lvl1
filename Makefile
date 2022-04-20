@@ -6,3 +6,6 @@ make brain-games: # Запуск файла bin/brain-games.php
 
 comand: #выполняет команды
 	composer validate
+
+lint: #запускает phpcs
+	composer exec --verbose phpcs -- --standard=PSR12 src bin
