@@ -9,3 +9,6 @@ comand: #выполняет команды
 
 lint: #запускает phpcs
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
+
+brain-even: #запускает игру на чётность brain-even
+	./bin/brain-even

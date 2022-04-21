@@ -1,0 +1,39 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use function cli\line;
+use function cli\prompt;
+
+line('Welcome to the Brain Game!');
+$name = prompt('May I have your name?');
+line("Hello, %s!", $name);
+
+$yes = "yes";
+$no = "no";
+$i = 0;
+line('Answer "yes" if the number is even, otherwise answer "no".');
+while ($i < 3){
+$random = rand(1, 999);	
+line('Question: ' . $random);
+$answer = prompt('Your answer');
+if($random % 2 == 0){
+	if( $answer == $yes )
+		line('Correct!');
+		$i++; 
+	if($answer !== $yes){
+		line("'no' is wrong answer ;(. Correct answer was 'yes'.");
+		line('Let`s try again, '.$name);
+	$i = 0;}
+}
+else if ($random % 2 !== 0){
+	if ($answer == $no)
+		line('Correct!');
+	$i++;
+	if($answer !== $no){
+		line("'yes' is wrong answer;(. Correct answer was 'no'.");
+		line('let`s try again, '.$name);
+	$i = 0;}
+	}
+} line('Cangrulations, '.$name);
