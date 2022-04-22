@@ -6,8 +6,6 @@ use Src\Engine ;
 
 Engine\welcome();
 
-use function Engine\logicOfGames();
-
 $rand1 = rand(1, 50);
 $rand2 = rand(1, 50);
 $randSign = rand(1, 3);
