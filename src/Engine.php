@@ -13,7 +13,7 @@ function welcome(){
 }
 
 function logicOfGames(){
-	$i = 0;
+	print_r($i = 0);
 	$currentAnswer = '';
 	while ($i < 3 ){
 		line('Question: '.$question);
