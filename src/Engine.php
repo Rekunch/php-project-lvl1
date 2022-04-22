@@ -14,8 +14,9 @@ function welcome(){
 
 function logicOfGames($question , $correctAnswer){
 	$i = 0;
+	$currentAnswer = '';
 	while ($i < 3 ){
-		line('Question: '.$Question);
+		line('Question: '.$question);
 		$currentAnswer = prompt('Your answer');
 	if ($currentAnswer === $correctAnswer){
 		line('Correcct!');
@@ -26,8 +27,8 @@ function logicOfGames($question , $correctAnswer){
 		line('let`s try again, '.$name);
 		break;
 	}
-	}if($i = 3)
-	line('Cangrulations, '$name);
+	}if($i == 3)
+	line('Cangrulations, '.$name);
 				}
 		
 		
