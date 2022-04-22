@@ -19,7 +19,7 @@ function startGame($question, $correctAnswer, $name){
 	while ($i < 3 ){
 		line('Question: '.$question);
 		$currentAnswer = prompt('Your answer');
-	if ($currentAnswer === $correctAnswer){
+	if ($currentAnswer == $correctAnswer){
 		line('Correct!');
 		$i++;
 	}
