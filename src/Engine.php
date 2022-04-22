@@ -12,8 +12,8 @@ function welcome(){
 	return $name;
 }
 
-function logicOfGames(){
-	print_r($i = 0);
+function startGame(){
+	$i = 0;
 	$currentAnswer = '';
 	while ($i < 3 ){
 		line('Question: '.$question);
