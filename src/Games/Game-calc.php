@@ -26,4 +26,4 @@ if($randSign == 3){
 }
 $question = "$rand1$randSign$rand2";
 
-Engine\logicOfGames($question , $correctAnswer);
+Engine\logicOfGames();
