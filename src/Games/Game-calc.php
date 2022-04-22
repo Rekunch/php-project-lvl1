@@ -28,4 +28,4 @@ if($randSign == 3){
 $question = "$rand1$randSign$rand2";
 
 use function startGame;
-Engine\startGame();
+Engine\startGame($question, $correctAnswer);
