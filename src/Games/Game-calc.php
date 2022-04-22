@@ -4,7 +4,6 @@ namespace Games\Calc;
 use Src\Engine ;
 
 use function welcome;
-use function logicOfGames;
 
 Engine\welcome();
 
@@ -29,4 +28,5 @@ if($randSign == 3){
 }
 $question = "$rand1$randSign$rand2";
 
-Engine\logicOfGames();
+use function startGame;
+Engine\startGame();
