@@ -14,7 +14,6 @@ function welcome(){
 
 function logicOfGames($currentAnswer , $correctAnswer){
 	$i = 0;
-	$currentAnswer = prompt(your
 	while ($i < 3 ){
 		line('Question: ');
 		$currentAnswer = prompt('Your answer');
