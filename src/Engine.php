@@ -16,18 +16,18 @@ function logicOfGames($question , $correctAnswer){
 	$i = 0;
 	$currentAnswer = '';
 	while ($i < 3 ){
-		line('Question: '.$Question);
+		line('Question: '.$question);
 		$currentAnswer = prompt('Your answer');
 	if ($currentAnswer === $correctAnswer){
-		line('Correcct!');
+		line('Correct!');
 		$i++;
 	}
-	if ($currentAnswer !=== $correctAnswer){
+	else if($currentAnswer !== $correctAnswer){
 		line("'$currentAnswer' is wrong answer;(. Correct answer was '$correctAnswer'.");
 		line('let`s try again, '.$name);
 		break;
 	}
-	}if($i = 3)
+	}if($i == 3)
 	line('Cangrulations, '.$name);
 				}
 		
