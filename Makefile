@@ -12,3 +12,6 @@ lint: #запускает phpcs
 
 brain-even: #запускает игру на чётность brain-even
 	./bin/brain-even
+
+brain-calc: #запускает игру калькулятор
+	./bin/brain-calc
