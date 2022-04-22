@@ -5,7 +5,7 @@ namespace Games\Calc;
 
 use Src\Engine ;
 
-Engine\welcome();
+Src\Engine\welcome();
 
 $rand1 = rand(1, 50);
 $rand2 = rand(1, 50);
