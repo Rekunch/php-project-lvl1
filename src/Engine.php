@@ -12,10 +12,10 @@ function welcome(){
 	return $name;
 }
 
-function logicOfGames($currentAnswer , $correctAnswer){
+function logicOfGames($question , $correctAnswer){
 	$i = 0;
 	while ($i < 3 ){
-		line('Question: ');
+		line('Question: '.$Question);
 		$currentAnswer = prompt('Your answer');
 	if ($currentAnswer === $correctAnswer){
 		line('Correcct!');
