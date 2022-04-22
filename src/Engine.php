@@ -13,7 +13,7 @@ function welcome(){
 	return $name;
 }
 
-function startGame(){
+function startGame($question, $correctAnswer){
 	$i = 0;
 	$currentAnswer = '';
 	while ($i < 3 ){
