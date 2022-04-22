@@ -16,23 +16,10 @@ function welcome(){
 function startGame($question, $correctAnswer, $name){
 	$i = 0;
 	$currentAnswer = '';
-	$correctAnswer = 0;
-$rand1 = rand(1, 50);
-$rand2 = rand(1, 50);
-$randSign = rand(1, 3);
-if($randSign == 1){
-    $randSign = "+";
-    $correctAnswer = $rand1 + $rand2;
-}
-if($randSign == 2){
-        $randSign = "-";
-     $correctAnswer = $rand1 - $rand2;
-}
-if($randSign == 3){
-            $randSign = "*";
-     $correctAnswer = $rand1 * $rand2;
-}
-$question = "$rand1$randSign$rand2";
+	$rand1 = rand(1, 50);
+        $rand2 = rand(1, 50);
+        $randSign = rand(1, 3);
+        $question = "$rand1$randSign$rand2";
 	while ($i < 3 ){
 		line('Question: '.$question);
 		$currentAnswer = prompt('Your answer');
