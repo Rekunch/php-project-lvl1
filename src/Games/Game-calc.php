@@ -2,11 +2,12 @@
 
 namespace Games\Calc;
 
-
 use Src\Engine ;
 
 use function welcome;
-welcome();
+use function logicOfGames;
+
+Engine\welcome();
 
 $rand1 = rand(1, 50);
 $rand2 = rand(1, 50);
@@ -25,5 +26,4 @@ if($randSign == 3){
 }
 $question = "$rand1$randSign$rand2";
 
-use function logicOfGames;
-logicOfGames();
+Engine\logicOfGames();
