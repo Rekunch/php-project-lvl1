@@ -12,7 +12,7 @@ function welcome(){
 	return $name;
 }
 
-function logicOfGames($question , $correctAnswer){
+function logicOfGames(){
 	$i = 0;
 	$currentAnswer = '';
 	while ($i < 3 ){
