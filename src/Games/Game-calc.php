@@ -9,7 +9,7 @@ use function logicOfGames;
 Engine\welcome();
 
 $correctAnswer = 0;
-print_r($rand1 = rand(1, 50));
+$rand1 = rand(1, 50);
 $rand2 = rand(1, 50);
 $randSign = rand(1, 3);
 if($randSign == 1){
