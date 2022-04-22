@@ -11,3 +11,26 @@ function welcome(){
 	line("Hello, %s!", $name);
 	return $name;
 }
+
+function logicOfGames($currentAnswer , $correctAnswer){
+	$i = 0;
+	$currentAnswer = prompt(your
+	while ($i < 3 ){
+		line('Question: ');
+		$currentAnswer = prompt('Your answer');
+	if ($currentAnswer === $correctAnswer){
+		line('Correcct!');
+		$i++;
+	}
+	if ($currentAnswer !=== $correctAnswer){
+		line("'$currentAnswer' is wrong answer;(. Correct answer was '$correctAnswer'.");
+		line('let`s try again, '.$name);
+		break;
+	}
+	}if($i = 3)
+	line('Cangrulations, '$name);
+				}
+		
+		
+		
+	
