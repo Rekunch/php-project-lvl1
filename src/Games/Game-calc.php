@@ -1,8 +1,6 @@
 <?php
 
-$autoloadPath1 = __DIR__ . '/../../../../autoload.php';
-
-    require_once $autoloadPath1;
+namespace Games\Calc;
 
 
 use Src\Engine ;
