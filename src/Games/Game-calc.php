@@ -3,14 +3,12 @@ namespace Games\Calc;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-namespace Games\Calc;
-
 use Src\Engine ;
 
 use function welcome;
 use function logicOfGames;
 
-Src\Engine\welcome();
+Engine\welcome();
 
 $rand1 = rand(1, 50);
 $rand2 = rand(1, 50);
