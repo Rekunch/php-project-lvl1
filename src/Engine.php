@@ -22,9 +22,11 @@ function engineGame($question, $correctAnswer){
 		line('Correct!');
 		return true;
 	}
-	else 
+	else{
                 line("'$currentAnswer' is wrong answer;(. Correct answer was '$correctAnswer'.");
+                return false;	
 	}
+}
 				
 		
 		
