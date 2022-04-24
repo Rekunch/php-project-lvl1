@@ -4,4 +4,4 @@
 href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img
 src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 <a href="https://asciinema.org/a/489024" target="_blank"><img src="https://asciinema.org/a/489024.svg" /></a>
-<script id="asciicast-489024" src="https://asciinema.org/a/489024.js" async></script>
+<a href="https://asciinema.org/a/14?autoplay=1"><img src="https://asciinema.org/a/14.png" width="836"/></a>
