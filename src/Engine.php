@@ -24,7 +24,6 @@ function engineGame($question, $correctAnswer){
 	else if($currentAnswer !== $correctAnswer){
 		line("'$currentAnswer' is wrong answer;(. Correct answer was '$correctAnswer'.");
 		line('let`s try again, '.$name);
-		break;
 	}
 				}
 		
