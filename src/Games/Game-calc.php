@@ -5,6 +5,7 @@ use Src\Engine ;
 
 use function welcome;
 use function engineGame;
+use function cli\line;
 
 Engine\welcome();
 $countRounds = 0;
