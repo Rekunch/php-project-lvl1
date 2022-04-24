@@ -20,12 +20,11 @@ function engineGame($question, $correctAnswer)
     $currentAnswer = '';
     line('Question: ' . $question);
     $currentAnswer = prompt('Your answer');
-    if ($currentAnswer == $correctAnswer){
+    if ($currentAnswer == $correctAnswer) {
         line('Correct!');
         return true;
-	}
-    else {
+        } else {
         line("'$currentAnswer' is wrong answer;(. Correct answer was '$correctAnswer'.");
         return false;	
 	}
-}		
+}	
