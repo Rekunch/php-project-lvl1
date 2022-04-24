@@ -31,10 +31,9 @@ $question = "$rand1$randSign$rand2";
 
 if (Engine\engineGame($question, $correctAnswer))
     $countRounds++;
-    else {
-        line("'$currentAnswer' is wrong answer;(. Correct answer was '$correctAnswer'.");
+    else 
 		line('let`s try again, '.$name);
-        break;}
+        break;
 if ($countRounds == 3)
     line('Congrulations, '.$name);
 }
