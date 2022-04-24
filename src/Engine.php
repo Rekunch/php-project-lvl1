@@ -13,23 +13,19 @@ function welcome(){
 	return $name;
 }
 
-function startGame($question, $correctAnswer, $name){
-	$i = 0;
+function engineGame($question, $correctAnswer){
 	$currentAnswer = '';
-	while ($i < 3 ){
 		line('Question: '.$question);
 		$currentAnswer = prompt('Your answer');
 	if ($currentAnswer == $correctAnswer){
 		line('Correct!');
-		$i++;
+		return true;
 	}
 	else if($currentAnswer !== $correctAnswer){
 		line("'$currentAnswer' is wrong answer;(. Correct answer was '$correctAnswer'.");
 		line('let`s try again, '.$name);
 		break;
 	}
-	}if($i == 3)
-	line('Cangrulations, '.$name);
 				}
 		
 		
