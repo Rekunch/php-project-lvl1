@@ -9,6 +9,7 @@ use function cli\line;
 
 $name = Engine\welcome();
 $countRounds = 0;
+line('What is the result of the expression?');
 while ($countRounds < 3){
 $correctAnswer = 0;
 $rand1 = rand(1, 50);
