@@ -22,8 +22,8 @@ function engineGame($question, $correctAnswer){
 		line('Correct!');
 		return true;
 	}
-	else if($currentAnswer !== $correctAnswer){
-		break;
+	else 
+		return false;
 	}
 				}
 		
