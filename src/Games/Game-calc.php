@@ -4,9 +4,11 @@ namespace Games\Calc;
 use Src\Engine ;
 
 use function welcome;
+use function engineGame;
 
 Engine\welcome();
-
+$countRounds = 0;
+while ($countRounds < 3){
 $correctAnswer = 0;
 $rand1 = rand(1, 50);
 $rand2 = rand(1, 50);
@@ -25,5 +27,8 @@ if($randSign == 3){
 }
 $question = "$rand1$randSign$rand2";
 
-use function startGame;
-Engine\startGame($question, $correctAnswer,$name);
+if (Engine\engineGame($question, $correctAnswer))
+    $countRounds++;
+    else
+        break;
+}
