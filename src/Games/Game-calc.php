@@ -8,6 +8,7 @@ use function engineGame;
 use function cli\line;
 
 Engine\welcome();
+$name =Engine\welcome();
 $countRounds = 0;
 while ($countRounds < 3){
 $correctAnswer = 0;
