@@ -31,4 +31,6 @@ if (Engine\engineGame($question, $correctAnswer))
     $countRounds++;
     else
         break;
+if ($countRounds == 3)
+    line('Congrulations, '.$name);
 }
