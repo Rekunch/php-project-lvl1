@@ -25,7 +25,7 @@ function engineGame($question, $correctAnswer){
 	else 
 		return false;
 	}
-				}
+				
 		
 		
 		
