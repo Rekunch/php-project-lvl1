@@ -15,10 +15,14 @@ while ($countRounds < 3) {
     $divisor = 1;
     $randNumber1 = rand(1, 100);
     $randNumber2 = rand(1, 100);
+    if($randNumber1 > $randnumber2)
+        $correctAnswer = $randNumber2;
+    else 
+           $correctAnswer = $randNumber1;
     $question = "$randNumber1 $randNumber2";
-    while ($divisor > 0){
-    if($randNumber1 % $divisor == 0 && $randNumber2 % $divisor == 0)
-        $divisor++;
+    while ($divisor <= $correctAnswer){
+    if($randNumber1 % $correctAnswer !== 0 && $randNumber2 % $correctAnswer !== 0)
+        $correctAnswer--;
     else 
       $correcAnswer = $divisor;
       break;
