@@ -1,0 +1,7 @@
+#!/usr/bin/env php
+<?php
+use Games\Progression;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+Progression\progression();

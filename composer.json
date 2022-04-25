@@ -4,14 +4,16 @@
 	    "bin/brain-games",
 	    "bin/brain-even",
 	    "bin/brain-calc",
-	    "bin/brain-gcd"
+	    "bin/brain-gcd",
+	    "bin/brain-progression"
     ],
     "autoload": {
 	    "files":[
 		    "src/Cli.php",
 		    "src/Engine.php",
 		    "src/Games/Game-calc.php",
-		    "src/Games/Game-gcd.php"
+		    "src/Games/Game-gcd.php",
+		    "src/Games/Game-progression.php"
 	    ],
         "psr-4": {
             "Hexlet\\Code\\": "src/"
