@@ -21,7 +21,7 @@ while ($countRounds < 3) {
            $correctAnswer = $randNumber1;
     $question = "$randNumber1 $randNumber2";
     while ($divisor <= $correctAnswer){
-    if($randNumber1 % $correctAnswer !== 0 && $randNumber2 % $correctAnswer !== 0)
+    if($randNumber1 % $correctAnswer !== 0 || $randNumber2 % $correctAnswer !== 0)
         $correctAnswer--;
     else 
       break;
