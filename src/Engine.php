@@ -21,8 +21,8 @@ function engineGame($question, $correctAnswer)
     if ($currentAnswer == $correctAnswer) {
         line('Correct!');
         return true;
-        } else {
+    } else {
         line("'$currentAnswer' is wrong answer;(. Correct answer was '$correctAnswer'.");
-        return false;	
-	}
-}	
+        return false;
+        }
+}
