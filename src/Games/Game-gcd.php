@@ -11,7 +11,7 @@ $name = Engine\welcome();
 $countRounds = 0;
 line('Find the greatest common divisor of given numbers.');
 while ($countRounds < 3) {
-    $correctAnswer = 0;
+    $correctAnswer = 1;
     $divisor = 1;
     $randNumber1 = rand(1, 100);
     $randNumber2 = rand(1, 100);
