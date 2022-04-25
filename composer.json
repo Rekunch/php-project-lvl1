@@ -10,7 +10,8 @@
 	    "files":[
 		    "src/Cli.php",
 		    "src/Engine.php",
-		    "src/Games/Game-calc.php"
+		    "src/Games/Game-calc.php",
+		    "src/Games/Game-gcd.php"
 	    ],
         "psr-4": {
             "Hexlet\\Code\\": "src/"
