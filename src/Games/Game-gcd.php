@@ -15,7 +15,7 @@ while ($countRounds < 3) {
     $divisor = 1;
     $randNumber1 = rand(1, 100);
     $randNumber2 = rand(1, 100);
-    $question = "$rand $rand2";
+    $question = "$randNumber1 $randNumber2";
     while ($divisor > 0){
     if($randnumber1 % $divisor == 0 && $randnumber2 % $divisor == 0)
         $divisor++;
