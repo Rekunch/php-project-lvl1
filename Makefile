@@ -18,3 +18,6 @@ brain-calc: #запускает игру калькулятор
 
 brain-gcd:
 	./bin/brain-gcd
+
+brain-progression: #запуск игры-прогрессии
+	./bin/brain-progression
