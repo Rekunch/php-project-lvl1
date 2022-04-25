@@ -1,7 +1,6 @@
 #!/usr/bin/env php
 use Games\Gsd;
 
-
 require_once __DIR__ . '/../vendor/autoload.php';
 
 Gcd\gcd();
