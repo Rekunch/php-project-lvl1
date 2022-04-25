@@ -16,5 +16,5 @@ brain-even: #запускает игру на чётность brain-even
 brain-calc: #запускает игру калькулятор
 	./bin/brain-calc
 
-brain-gcd: #запуск ишгры на НОД
+brain-gcd: #запуск игры на НОД
 	./bin/brain-gcd
