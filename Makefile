@@ -17,4 +17,4 @@ brain-calc: #запускает игру калькулятор
 	./bin/brain-calc
 
 brain-gcd: #запуск ишгры на НОД
-	.bin/brain-gcd
+	./bin/brain-gcd
