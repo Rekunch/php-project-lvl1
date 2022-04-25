@@ -24,7 +24,6 @@ while ($countRounds < 3) {
     if($randNumber1 % $correctAnswer !== 0 && $randNumber2 % $correctAnswer !== 0)
         $correctAnswer--;
     else 
-      $correcAnswer = $divisor;
       break;
       }
     if (Engine\engineGame($question, $correctAnswer))
