@@ -15,7 +15,7 @@ while ($countRounds < 3) {
     $divisor = 1;
     $randNumber1 = rand(1, 100);
     $randNumber2 = rand(1, 100);
-    if($randNumber1 > $randnumber2)
+    if($randNumber1 > $randNumber2)
         $correctAnswer = $randNumber2;
     else 
            $correctAnswer = $randNumber1;
