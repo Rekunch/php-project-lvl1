@@ -6,6 +6,7 @@ use function welcome;
 use function engineGame;
 use function cli\line;
 
+function gcd(){
 $name = Engine\welcome();
 $countRounds = 0;
 line('Find the greatest common divisor of given numbers.');
@@ -30,4 +31,5 @@ while ($countRounds < 3) {
     }
     if ($countRounds == 3)
     line('Congrulations, ' . $name);
+}
 }
