@@ -20,7 +20,7 @@ while ($countRounds < 3) {
     if($randnumber1 % $divisor == 0 && $randnumber2 % $divisor == 0)
         $divisor++;
     else 
-      $correctnumber = $divisor;
+      $correcAnswer = $divisor;
       break;
       }
     if (Engine\engineGame($question, $correctAnswer))
