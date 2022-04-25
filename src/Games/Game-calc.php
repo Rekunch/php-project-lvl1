@@ -1,5 +1,7 @@
 <?php
 
+namespace Games\Calc;
+
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
 
@@ -8,8 +10,6 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-
-namespace Games\Calc;
 
 use Src\Engine ;
 use function welcome;
