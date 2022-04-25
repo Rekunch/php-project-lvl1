@@ -20,20 +20,19 @@ function gcd()
             $correctAnswer = $randNumber2;
         else $correctAnswer = $randNumber1;
         $question = "$randNumber1 $randNumber2";
-        while ($divisor <= $correctAnswer){
+        while ($divisor <= $correctAnswer) {
             if ($randNumber1 % $correctAnswer !== 0 || $randNumber2 % $correctAnswer !== 0)
             $correctAnswer--;
-            else 
-            break;
-      }
-    if (Engine\engineGame($question, $correctAnswer))
-    $countRounds++;
-    else {
+            else break;
+        }
+        if (Engine\engineGame($question, $correctAnswer))
+        $countRounds++;
+        else {
         line('let`s try again, ' . $name);
         break;
     }
-    if ($countRounds == 3)
-    line('Congrulations, ' . $name);
-}
+        if ($countRounds == 3)
+        line('Congrulations, ' . $name);
+    }
 }
 
