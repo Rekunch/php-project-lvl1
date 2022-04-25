@@ -33,3 +33,4 @@ while ($countRounds < 3) {
     line('Congrulations, ' . $name);
 }
 }
+gcd();
