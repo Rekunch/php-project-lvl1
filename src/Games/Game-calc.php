@@ -27,7 +27,7 @@ function calc()
         }
         if ($randSign == 3) {
             $randSign = "*";
-        $correctAnswer = $rand1 * $rand2;
+            $correctAnswer = $rand1 * $rand2;
         }
         $question = "$rand1$randSign$rand2";
         if (Engine\engineGame($question, $correctAnswer))
@@ -36,7 +36,7 @@ function calc()
             line('let`s try again, ' . $name);
             break;
         }
-    if ($countRounds == 3)
+        if ($countRounds == 3)
         line('Congrulations, ' . $name);
     }
 }
