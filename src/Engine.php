@@ -24,5 +24,5 @@ function engineGame($question, $correctAnswer)
     } else {
         line("'$currentAnswer' is wrong answer;(. Correct answer was '$correctAnswer'.");
         return false;
-        }
+    }
 }
