@@ -37,4 +37,4 @@ else if ($random % 2 !== 0){
 	break;}
 	}
 }if($i == 3)
-line('Cangrulations, '.$name);
+line('Congratulations, '.$name);
