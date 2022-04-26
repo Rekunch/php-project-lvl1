@@ -18,23 +18,26 @@ function gcd()
         $divisor = 1;
         $randNumber1 = rand(1, 100);
         $randNumber2 = rand(1, 100);
-        if ($randNumber1 > $randNumber2)
+        if ($randNumber1 > $randNumber2) {
             $correctAnswer = $randNumber2;
-        else $correctAnswer = $randNumber1;
+        } else { $correctAnswer = $randNumber1;
+        }
         $question = "$randNumber1 $randNumber2";
         while ($divisor <= $correctAnswer) {
-            if ($randNumber1 % $correctAnswer !== 0 || $randNumber2 % $correctAnswer !== 0)
-            $correctAnswer--;
-            else break;
+            if ($randNumber1 % $correctAnswer !== 0 || $randNumber2 % $correctAnswer !== 0) {
+                $correctAnswer--;
+            } else { break;
+            }
         }
-        if (Engine\engineGame($question, $correctAnswer))
-        $countRounds++;
-        else {
+        if (Engine\engineGame($question, $correctAnswer)) {
+            $countRounds++;
+        } else {
             line('let`s try again, ' . $name);
             break;
         }
-        if ($countRounds == 3)
-        line('Congrulations, ' . $name);
+        if ($countRounds == 3) {
+            line('Congrulations, ' . $name);
+        }
     }
 }
 
