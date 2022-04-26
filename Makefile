@@ -21,3 +21,6 @@ brain-gcd:
 
 brain-progression: #запуск игры-прогрессии
 	./bin/brain-progression
+
+brain-prime: #запуск игры на просто число
+	./bin/brain-prime
