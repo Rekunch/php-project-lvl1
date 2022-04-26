@@ -9,3 +9,5 @@ src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability"
 [![asciicast](https://asciinema.org/a/489716.svg)](https://asciinema.org/a/489716)
 
 <a href="https://asciinema.org/a/489934" target="_blank"><img src="https://asciinema.org/a/489934.svg" /></a>
+
+<a href="https://asciinema.org/a/490111" target="_blank"><img src="https://asciinema.org/a/490111.svg" /></a>
