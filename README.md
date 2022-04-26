@@ -7,6 +7,9 @@ src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability"
 ### Github Actions
 ![example event parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push)
 
+### Git clone this Games!
+git@github.com:Rekunch/php-project-lvl1.git
+
 <a href="https://asciinema.org/a/489024" target="_blank"><img src="https://asciinema.org/a/489024.svg" /></a>
 
 [![asciicast](https://asciinema.org/a/489716.svg)](https://asciinema.org/a/489716)
