@@ -32,11 +32,11 @@ function gcd()
         if (Engine\engineGame($question, $correctAnswer)) {
             $countRounds++;
         } else {
-            line('let`s try again, ' . $name);
+            line('let`s try again, ' . $name . '!');
             break;
         }
         if ($countRounds == 3) {
-            line('Congrulations, ' . $name);
+            line('Congrulations, ' . $name . '!');
         }
     }
 }

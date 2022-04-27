@@ -33,8 +33,8 @@ else if ($random % 2 !== 0){
 	$i++;
 	if($answer !== $no){
 		line("'yes' is wrong answer;(. Correct answer was 'no'.");
-		line('let`s try again, '.$name);
+		line('let`s try again, ' . $name . '!');
 	break;}
 	}
 }if($i == 3)
-line('Congratulations, '.$name.'!');
+line('Congratulations, ' . $name . '!');

@@ -36,11 +36,11 @@ Function prime()
         if(Engine\engineGame($question, $correctAnswer)) {
             $countRounds++;
         } else {
-            line('Let`s try again, ' . $name);
+            line('Let`s try again, ' . $name . '!');
             break;
         }
         if($countRounds == 3) {
-            line('Congrulations, ' . $name);
+            line('Congrulations, ' . $name . '!');
         }
     }
 }
