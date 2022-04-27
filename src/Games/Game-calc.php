@@ -29,7 +29,7 @@ function calc()
             $randSign = "*";
             $correctAnswer = $rand1 * $rand2;
         }
-        $question = "{$rand1}{$randSign}{$rand2}";
+        $question = "{$rand1} {$randSign} {$rand2}";
         if (Engine\engineGame($question, $correctAnswer)) {
             $countRounds++;
         } else {
