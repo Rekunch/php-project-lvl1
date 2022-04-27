@@ -20,22 +20,22 @@ function prime()
         $i = 1;
         $question = $randNumber;
         if ($randNumber == 1) {
-		$correctAnswer = $correctAnswerYes;
+            $correctAnswer = $correctAnswerYes;
         } else {
-        for ($i = 1, $count = 0; $i < $question ; $i++) {
-            if ($question % $i !== 0) { 
-                $count = $count;
+            for ($i = 1, $count = 0; $i < $question ; $i++) {
+                if ($question % $i !== 0) { 
+                    $count = $count;
                 }
-            if ($question % $i == 0) { 
-		$count++;
-	    }
-	}    
-        if ($count > 1) {
-            $correctAnswer = $correctAnswerNo;
-        } else {
-		$correctAnswer = $correctAnswerYes;
-	}
-	}	
+                if ($question % $i == 0) { 
+                    $count++;
+                }
+            }    
+            if ($count > 1) {
+                $correctAnswer = $correctAnswerNo;
+            } else {
+                $correctAnswer = $correctAnswerYes;
+            }
+        }    
         if (Engine\engineGame($question, $correctAnswer)) {
             $countRounds++;
         } else {
@@ -43,7 +43,7 @@ function prime()
             break;
         }
         if ($countRounds == 3) {
-		line('Congratulations, ' . $name . '!');
-	}
-}
+            line('Congratulations, ' . $name . '!');
+        }
+    }
 }

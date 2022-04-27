@@ -38,7 +38,7 @@ function gcd()
             break;
         }
         if ($countRounds == 3) { 
-		line('Congratulations, ' . $name . '!');
-	}
+            line('Congratulations, ' . $name . '!');
+        }
     }
 }
