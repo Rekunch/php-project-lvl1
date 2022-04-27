@@ -22,20 +22,20 @@ function prime()
         if ($randNumber == 1) {
             $correctAnswer = $correctAnswerYes;
         } else {
-            for ($i = 1, $count = 0; $i < $question ; $i++) {
-                if ($question % $i !== 0) { 
+            for ($i = 1, $count = 0; $i < $question; $i++) {
+                if ($question % $i !== 0) {
                     $count = $count;
                 }
-                if ($question % $i == 0) { 
+                if ($question % $i == 0) {
                     $count++;
                 }
-            }    
+            }
             if ($count > 1) {
                 $correctAnswer = $correctAnswerNo;
             } else {
                 $correctAnswer = $correctAnswerYes;
             }
-        }    
+        }
         if (Engine\engineGame($question, $correctAnswer)) {
             $countRounds++;
         } else {

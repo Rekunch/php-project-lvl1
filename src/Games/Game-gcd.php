@@ -37,7 +37,7 @@ function gcd()
             line("Let's try again, " . $name . "!");
             break;
         }
-        if ($countRounds == 3) { 
+        if ($countRounds == 3) {
             line('Congratulations, ' . $name . '!');
         }
     }
