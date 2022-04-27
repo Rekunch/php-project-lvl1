@@ -19,32 +19,26 @@ function prime()
         $correctAnswerNo = 'no';
         $i = 1;
         $question = $randNumber;
-        if ($randNumber == 1) {
+        if ($randNumber == 1)
             $correctAnswer = $correctAnswerYes;
-        }
         for ($i = 1, $count = 0; $i < $question ; $i++) {
-            if ($question % $i !== 0) {
+            if ($question % $i !== 0)
                 $count = $count;
-            }
-            if ($question % $i == 0) {
+            if ($question % $i == 0) 
                 $count++;
-            }
         }
-        if ($count > 1) {
+        if ($count > 1)
             $correctAnswer = $correctAnswerNo;
-        } else {
+        else
             $correctAnswer = $correctAnswerYes;
-        }
-        if (Engine\engineGame($question, $correctAnswer)) {
+        if (Engine\engineGame($question, $correctAnswer))
             $countRounds++;
-        } else {
+        else {
             line("Let's try again, " . $name . "!");
             break;
         }
-        if ($countRounds == 3) {
+        if ($countRounds == 3)
             line('Congratulations, ' . $name . '!');
-        }
-    }
 }
 
 

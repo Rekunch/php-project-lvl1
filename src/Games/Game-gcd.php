@@ -31,15 +31,13 @@ function gcd()
                 break;
             }
         }
-        if (Engine\engineGame($question, $correctAnswer)) {
+        if (Engine\engineGame($question, $correctAnswer))
             $countRounds++;
-        } else {
+        else {
             line("Let's try again, " . $name . "!");
             break;
         }
-        if ($countRounds == 3) { 
+        if ($countRounds == 3) 
             line('Congratulations, ' . $name . '!');
-        }        
     }
 }
-
