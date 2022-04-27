@@ -23,23 +23,27 @@ function prime()
 		$correctAnswer = $correctAnswerYes;
         }
         for ($i = 1, $count = 0; $i < $question ; $i++) {
-            if ($question % $i !== 0) 
+            if ($question % $i !== 0) { 
                 $count = $count;
-            if ($question % $i == 0) 
-                $count++;
-        }
-        if ($count > 1)
+                }
+            if ($question % $i == 0) { 
+		$count++;
+	    }
+	}    
+        if ($count > 1) {
             $correctAnswer = $correctAnswerNo;
-        else
-            $correctAnswer = $correctAnswerYes;
-        if (Engine\engineGame($question, $correctAnswer))
-            $countRounds++;
+        }
         else {
+		$correctAnswer = $correctAnswerYes;
+	}	
+        if (Engine\engineGame($question, $correctAnswer)) {
+            $countRounds++;
+        } else {
             line("Let's try again, " . $name . "!");
             break;
         }
-        if ($countRounds == 3)
-            line('Congratulations, ' . $name . '!');
+        if ($countRounds == 3) {
+		line('Congratulations, ' . $name . '!');
+	}
 }
 }
-
