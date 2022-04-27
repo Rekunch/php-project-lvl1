@@ -35,7 +35,7 @@ function progression()
         if ($correctIndex > 0) {
             if ($correctIndex <= (count($arrayNumbers)) - 2) {
                 $correctAnswer = ($arrayNumbers[$correctIndex - 1] + $arrayNumbers[$correctIndex + 1]) / 2 ;
-	    } else {
+            } else {
                  $correctAnswer = $arrayNumbers[$correctIndex - 1] + ($arrayNumbers[$correctIndex - 2] - $arrayNumbers[$correctIndex - 3]);
             }
         }
