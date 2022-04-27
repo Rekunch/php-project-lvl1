@@ -13,7 +13,7 @@ function progression()
         $countRounds = 0;
         line('What number is missing in the progression?');
     while ($countRounds < 3) {
-        $countNumbers = rand(5, 10);
+        $countNumbers = rand(6, 10);
         $countProgression = rand(1, 10);
         $firstNumber = rand(1, 200);
         $unknowNumber = rand(1, $countNumbers);
