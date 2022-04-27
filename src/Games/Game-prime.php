@@ -19,10 +19,11 @@ function prime()
         $correctAnswerNo = 'no';
         $i = 1;
         $question = $randNumber;
-        if ($randNumber == 1)
-            $correctAnswer = $correctAnswerYes;
+        if ($randNumber == 1) {
+		$correctAnswer = $correctAnswerYes;
+        }
         for ($i = 1, $count = 0; $i < $question ; $i++) {
-            if ($question % $i !== 0)
+            if ($question % $i !== 0) 
                 $count = $count;
             if ($question % $i == 0) 
                 $count++;
@@ -40,5 +41,5 @@ function prime()
         if ($countRounds == 3)
             line('Congratulations, ' . $name . '!');
 }
-
+}
 
