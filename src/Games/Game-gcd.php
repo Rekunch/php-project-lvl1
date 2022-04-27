@@ -20,13 +20,15 @@ function gcd()
         $randNumber2 = rand(1, 100);
         if ($randNumber1 > $randNumber2) {
             $correctAnswer = $randNumber2;
-        } else { $correctAnswer = $randNumber1;
+	} else {
+            $correctAnswer = $randNumber1;
         }
         $question = "$randNumber1 $randNumber2";
         while ($divisor <= $correctAnswer) {
             if ($randNumber1 % $correctAnswer !== 0 || $randNumber2 % $correctAnswer !== 0) {
                 $correctAnswer--;
-            } else { break;
+	    } else {
+                break;
             }
         }
         if (Engine\engineGame($question, $correctAnswer)) {
@@ -35,9 +37,8 @@ function gcd()
             line("Let's try again, " . $name . "!");
             break;
         }
-        if ($countRounds == 3) {
-            line('Congratulations, ' . $name . '!');
-        }
+        if ($countRounds == 3) 
+            line('Congratulations, ' . $name . '!');        
     }
 }
 

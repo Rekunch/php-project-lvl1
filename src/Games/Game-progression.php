@@ -3,6 +3,7 @@
 namespace Games\Progression;
 
 use Src\Engine;
+
 use function welcome;
 use function engineGame;
 use function cli\line;
@@ -19,12 +20,12 @@ function progression()
         $unknowNumber = rand(1, $countNumbers);
         $arrayNumbers = [];
         $i = 0;
-        while ($i < $countNumbers){
+        while ($i < $countNumbers) {
             if ($i == 0) {
                 $arrayNumbers[$i] = $firstNumber;
                 $i++;
-            }
-            else { $arrayNumbers[$i] = $arrayNumbers[$i - 1] + $countProgression;
+            } else {
+                $arrayNumbers[$i] = $arrayNumbers[$i - 1] + $countProgression;
                 $i++;
             }
         }
@@ -32,9 +33,10 @@ function progression()
         $arrayNumbers[$unknowNumber] = $unknowSymbol;
         $correctIndex = array_search($unknowSymbol, $arrayNumbers);
         if ($correctIndex > 0) {
-            if($correctIndex <= (count($arrayNumbers)) - 2) {
+            if ($correctIndex <= (count($arrayNumbers)) - 2) {
                 $correctAnswer = ($arrayNumbers[$correctIndex - 1] + $arrayNumbers[$correctIndex + 1]) / 2 ;
-            } else { $correctAnswer = $arrayNumbers[$correctIndex - 1] + ($arrayNumbers[$correctIndex - 2] - $arrayNumbers[$correctIndex - 3]);
+	    } else {
+                 $correctAnswer = $arrayNumbers[$correctIndex - 1] + ($arrayNumbers[$correctIndex - 2] - $arrayNumbers[$correctIndex - 3]);
             }
         }
         $question = implode(' ', $arrayNumbers);
@@ -47,5 +49,5 @@ function progression()
         if ($countRounds == 3) {
             line('Congratulations, ' . $name . '!');
         }
-    }  
+    }
 }

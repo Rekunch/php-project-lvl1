@@ -3,11 +3,12 @@
 namespace Games\Prime;
 
 use Src\Engine;
+
 use function welcome;
 use function engineGame;
 use function cli\line;
 
-Function prime()
+function prime()
 {
     $name = Engine\welcome();
     $countRounds = 0;
@@ -21,7 +22,7 @@ Function prime()
         if ($randNumber == 1) {
             $correctAnswer = $correctAnswerYes;
         }
-        for ($i = 1, $count = 0 ; $i < $question ; $i++){
+            for ($i = 1, $count = 0; $i < $question ; $i++) {
             if ($question % $i !== 0) {
                 $count = $count;
             }
@@ -31,15 +32,16 @@ Function prime()
         }
         if ($count > 1) {
             $correctAnswer = $correctAnswerNo;
-        } else { $correctAnswer = $correctAnswerYes;
+	} else {
+            $correctAnswer = $correctAnswerYes;
         }
-        if(Engine\engineGame($question, $correctAnswer)) {
+        if (Engine\engineGame($question, $correctAnswer)) {
             $countRounds++;
         } else {
             line("Let's try again, " . $name . "!");
             break;
         }
-        if($countRounds == 3) {
+        if ($countRounds == 3) {
             line('Congratulations, ' . $name . '!');
         }
     }
