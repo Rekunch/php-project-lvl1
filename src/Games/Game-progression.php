@@ -28,7 +28,7 @@ function progression()
                 $i++;
             }
         }
-        $unknowSymbol = '...';
+        $unknowSymbol = '..';
         $arrayNumbers[$unknowNumber] = $unknowSymbol;
         $correctIndex = array_search($unknowSymbol, $arrayNumbers);
         if ($correctIndex > 0) {
