@@ -29,11 +29,11 @@ function calc()
             $randSign = "*";
             $correctAnswer = $rand1 * $rand2;
         }
-        $question = "$rand1$randSign$rand2";
+        $question = "{$rand1}{$randSign}{$rand2}";
         if (Engine\engineGame($question, $correctAnswer)) {
             $countRounds++;
         } else {
-            line('let`s try again, ' . $name . '!');
+            line("let's try again, " . $name . "!");
             break;
         }
         if ($countRounds == 3) {
