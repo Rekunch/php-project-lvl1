@@ -21,7 +21,7 @@ function prime()
         $question = $randNumber;
         if ($randNumber == 1) {
 		$correctAnswer = $correctAnswerYes;
-        }
+        } else {
         for ($i = 1, $count = 0; $i < $question ; $i++) {
             if ($question % $i !== 0) { 
                 $count = $count;
@@ -32,9 +32,9 @@ function prime()
 	}    
         if ($count > 1) {
             $correctAnswer = $correctAnswerNo;
-        }
-        else {
+        } else {
 		$correctAnswer = $correctAnswerYes;
+	}
 	}	
         if (Engine\engineGame($question, $correctAnswer)) {
             $countRounds++;
