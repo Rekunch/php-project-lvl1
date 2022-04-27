@@ -24,7 +24,7 @@ if($random % 2 == 0){
 		$i++; 
 	if($answer !== $yes){
 		line("'no' is wrong answer ;(. Correct answer was 'yes'.");
-		line('Let`s try again, '.$name);
+		line("Let's try again, " . $name . "!");
 	break;}
 }
 else if ($random % 2 !== 0){
