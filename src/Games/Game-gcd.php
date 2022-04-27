@@ -32,7 +32,7 @@ function gcd()
         if (Engine\engineGame($question, $correctAnswer)) {
             $countRounds++;
         } else {
-            line("let's try again, " . $name . "!");
+            line("Let's try again, " . $name . "!");
             break;
         }
         if ($countRounds == 3) {
