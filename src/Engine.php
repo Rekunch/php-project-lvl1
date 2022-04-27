@@ -13,7 +13,7 @@ function welcome()
     return $name;
 }
 
-function engineGame($question, $correctAnswer)
+function engineGame(string $question, string $correctAnswer)
 {
     $currentAnswer = '';
     line('Question: ' . $question);
