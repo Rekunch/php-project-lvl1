@@ -40,7 +40,7 @@ Function prime()
             break;
         }
         if($countRounds == 3) {
-            line('Congrulations, ' . $name . '!');
+            line('Congratulations, ' . $name . '!');
         }
     }
 }
