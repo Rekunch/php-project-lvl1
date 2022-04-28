@@ -20,7 +20,7 @@ function prime()
         if ($randNumber == 1) {
             $correctAnswer = $correctAnswerYes;
         } else {
-            for ($i = 1; $i <= $question; $i++) {
+            for ($i = 1; $i < $question; $i++) {
                 if ($question % $i !== 0) {
                     $count = $count;
                 }
@@ -28,7 +28,7 @@ function prime()
                     $count++;
                 }
             }
-            if ($count > 2) {
+            if ($count > 1) {
                 $correctAnswer = $correctAnswerNo;
             } else {
                 $correctAnswer = $correctAnswerYes;
