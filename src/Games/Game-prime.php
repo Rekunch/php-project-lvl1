@@ -14,8 +14,8 @@ function prime()
     while ($countRounds < 3) {
         $randNumber = rand(1, 100);
         $correctAnswerYes = 'yes';
-	$correctAnswerNo = 'no';
-	$count = 0;
+        $correctAnswerNo = 'no';
+        $count = 0;
         $question = (string) $randNumber;
         if ($randNumber == 1) {
             $correctAnswer = $correctAnswerYes;
