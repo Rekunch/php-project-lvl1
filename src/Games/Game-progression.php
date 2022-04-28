@@ -31,6 +31,7 @@ function progression()
         $mirrorArrayNumbers = $arrayNumbers;
         $arrayNumbers[$unknowNumber] = $unknowSymbol;
         $correctIndex = array_search($unknowSymbol, $arrayNumbers, true);
+        $correctIndex = (int) $correctIndex;
         $mirrorCorrectIndex = $correctIndex - 1;
         // if ($correctIndex > 0) {
            // if ($correctIndex <= (count($arrayNumbers)) - 2) {
