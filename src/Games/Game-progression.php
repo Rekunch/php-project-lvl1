@@ -27,12 +27,12 @@ function progression()
                 $i++;
             }
         }
-	$unknowSymbol = '..';
-	$mirrorArrayNumbers = $arrayNumbers;
+        $unknowSymbol = '..';
+        $mirrorArrayNumbers = $arrayNumbers;
         $arrayNumbers[$unknowNumber] = $unknowSymbol;
-	$correctIndex = array_search($unknowSymbol, $arrayNumbers, false);
-	$mirrorCorrectIndex = $correctIndex;
-       // if ($correctIndex > 0) {
+        $correctIndex = array_search($unknowSymbol, $arrayNumbers, false);
+        $mirrorCorrectIndex = $correctIndex;
+        // if ($correctIndex > 0) {
            // if ($correctIndex <= (count($arrayNumbers)) - 2) {
                // $correctAnswer = (string) ($arrayNumbers[$correctIndex - 1] + $arrayNumbers[$correctIndex + 1]) / 2 ;
          //   } else {
