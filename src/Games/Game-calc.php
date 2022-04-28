@@ -20,15 +20,18 @@ function calc()
         $randSign = rand(1, 3);
         if ($randSign == 1) {
             $randSign = "+";
-            $correctAnswer = $rand1 + $rand2;
+	    $correctAnswer = $rand1 + $rand2;
+	    $correctAnswer = (string) $correctAnswer;
         }
         if ($randSign == 2) {
             $randSign = "-";
-            $correctAnswer = $rand1 - $rand2;
+	    $correctAnswer = $rand1 - $rand2;
+	    $correctAnswer = (string) $correctAnswer;
         }
         if ($randSign == 3) {
             $randSign = "*";
-            $correctAnswer = $rand1 * $rand2;
+	    $correctAnswer = $rand1 * $rand2;
+	    $correctAnswer = (string) $correctAnswer;
         }
         $question = "{$rand1} {$randSign} {$rand2}";
         if (Engine\engineGame($question, $correctAnswer)) {

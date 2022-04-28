@@ -38,7 +38,8 @@ function progression()
             } else {
                  $correctAnswer = $arrayNumbers[$correctIndex - 1] + ($arrayNumbers[$correctIndex - 2] - $arrayNumbers[$correctIndex - 3]);
             }
-        }
+	}
+	$correctAnswer = (string) $correctAnswer;
         $question = implode(' ', $arrayNumbers);
         if (Engine\engineGame($question, $correctAnswer)) {
             $countRounds++;
