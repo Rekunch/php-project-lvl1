@@ -27,17 +27,19 @@ function progression()
                 $i++;
             }
         }
-        $unknowSymbol = '..';
+	$unknowSymbol = '..';
+	$mirrorArrayNumbers = $arrayNumbers;
         $arrayNumbers[$unknowNumber] = $unknowSymbol;
-        $correctIndex = array_search($unknowSymbol, $arrayNumbers);
-        if ($correctIndex > 0) {
-            if ($correctIndex <= (count($arrayNumbers)) - 2) {
-                $correctAnswer = (string) ($arrayNumbers[$correctIndex - 1] + $arrayNumbers[$correctIndex + 1]) / 2 ;
-            } else {
-                 $correctAnswer = (string) $arrayNumbers[$correctIndex - 1] + ($arrayNumbers[$correctIndex - 2] - $arrayNumbers[$correctIndex - 3]);
-            }
-        }
-        $correctAnswer = (string) $correctAnswer;
+	$correctIndex = array_search($unknowSymbol, $arrayNumbers, false);
+	$mirrorCorrectIndex = $correctIndex;
+       // if ($correctIndex > 0) {
+           // if ($correctIndex <= (count($arrayNumbers)) - 2) {
+               // $correctAnswer = (string) ($arrayNumbers[$correctIndex - 1] + $arrayNumbers[$correctIndex + 1]) / 2 ;
+         //   } else {
+                // $correctAnswer = (string) $arrayNumbers[$correctIndex - 1] + ($arrayNumbers[$correctIndex - 2] - $arrayNumbers[$correctIndex - 3]);
+            //}
+        //}
+        $correctAnswer = (string) $mirrorArrayNumbers[$mirrorCorrectIndex];
         $question = implode(' ', $arrayNumbers);
         if (Engine\engineGame($question, $correctAnswer)) {
             $countRounds++;
