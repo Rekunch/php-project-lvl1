@@ -17,8 +17,7 @@ function prime()
         $randNumber = rand(1, 100);
         $correctAnswerYes = 'yes';
         $correctAnswerNo = 'no';
-        $i = 1;
-        $question = $randNumber;
+        $question = (string) $randNumber;
         if ($randNumber == 1) {
             $correctAnswer = $correctAnswerYes;
         } else {

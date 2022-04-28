@@ -14,7 +14,7 @@ function calc()
     $countRounds = 0;
     line('What is the result of the expression?');
     while ($countRounds < 3) {
-        $correctAnswer = 0;
+        $correctAnswer = "";
         $rand1 = rand(1, 50);
         $rand2 = rand(1, 50);
         $randSign = rand(1, 3);
