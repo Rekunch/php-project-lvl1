@@ -30,8 +30,8 @@ function gcd()
             } else {
                 break;
             }
-	}
-	$correctAnswer = (string) $correctAnswer;
+        }
+        $correctAnswer = (string) $correctAnswer;
         if (Engine\engineGame($question, $correctAnswer)) {
             $countRounds++;
         } else {
