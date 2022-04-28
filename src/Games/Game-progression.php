@@ -4,8 +4,6 @@ namespace Games\Progression;
 
 use Src\Engine;
 
-use function welcome;
-use function engineGame;
 use function cli\line;
 
 function progression()
