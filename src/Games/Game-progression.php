@@ -34,7 +34,7 @@ function progression()
         $correctIndex = array_search($unknowSymbol, $arrayNumbers);
         if ($correctIndex > 0) {
             if ($correctIndex <= (count($arrayNumbers)) - 2) {
-                $correctAnswer =(string) ($arrayNumbers[$correctIndex - 1] + $arrayNumbers[$correctIndex + 1]) / 2 ;
+                $correctAnswer = (string) ($arrayNumbers[$correctIndex - 1] + $arrayNumbers[$correctIndex + 1]) / 2 ;
             } else {
                  $correctAnswer = (string) $arrayNumbers[$correctIndex - 1] + ($arrayNumbers[$correctIndex - 2] - $arrayNumbers[$correctIndex - 3]);
             }
