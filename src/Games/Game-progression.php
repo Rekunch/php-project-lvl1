@@ -39,7 +39,7 @@ function progression()
                 // $correctAnswer = (string) $arrayNumbers[$correctIndex - 1] + ($arrayNumbers[$correctIndex - 2] - $arrayNumbers[$correctIndex - 3]);
             //}
         //}
-        $correctAnswer = (string) $mirrorArrayNumbers[$mirrorCorrectIndex];
+        $correctAnswer = (string) $mirrorArrayNumbers[$mirrorCorrectIndex - 1] + $countProgression;
         $question = implode(' ', $arrayNumbers);
         if (Engine\engineGame($question, $correctAnswer)) {
             $countRounds++;
