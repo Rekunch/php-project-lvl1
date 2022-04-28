@@ -14,12 +14,13 @@ function prime()
     while ($countRounds < 3) {
         $randNumber = rand(1, 100);
         $correctAnswerYes = 'yes';
-        $correctAnswerNo = 'no';
+	$correctAnswerNo = 'no';
+	$count = 0;
         $question = (string) $randNumber;
         if ($randNumber == 1) {
             $correctAnswer = $correctAnswerYes;
         } else {
-            for ($i = 1, $count = 0; $i <= $question; $i++) {
+            for ($i = 1; $i <= $question; $i++) {
                 if ($question % $i !== 0) {
                     $count = $count;
                 }

@@ -31,7 +31,7 @@ function progression()
         $mirrorArrayNumbers = $arrayNumbers;
         $arrayNumbers[$unknowNumber] = $unknowSymbol;
         $correctIndex = array_search($unknowSymbol, $arrayNumbers, true);
-        $mirrorCorrectIndex = $correctIndex;
+        $mirrorCorrectIndex = $correctIndex - 1;
         // if ($correctIndex > 0) {
            // if ($correctIndex <= (count($arrayNumbers)) - 2) {
                // $correctAnswer = (string) ($arrayNumbers[$correctIndex - 1] + $arrayNumbers[$correctIndex + 1]) / 2 ;
@@ -39,7 +39,7 @@ function progression()
                 // $correctAnswer = (string) $arrayNumbers[$correctIndex - 1] + ($arrayNumbers[$correctIndex - 2] - $arrayNumbers[$correctIndex - 3]);
             //}
         //}
-        $correctAnswer = $mirrorArrayNumbers[$mirrorCorrectIndex - 1] + $countProgression;
+        $correctAnswer = $mirrorArrayNumbers[$mirrorCorrectIndex] + $countProgression;
         $correctAnswer = (string) $correctAnswer;
         $question = implode(' ', $arrayNumbers);
         if (Engine\engineGame($question, $correctAnswer)) {
